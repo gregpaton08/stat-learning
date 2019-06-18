@@ -146,7 +146,7 @@ hist(Boston$ptratio, breaks=25)
 # a skew towards high ratios, but no particularly high ratios
 
 # (e)
-dim(subset(Boston, chas == 1))
+sum(Boston$chas == 1)
 # 35 suburbs
 
 # (f)
@@ -180,4 +180,4 @@ dim(subset(Boston, rm > 8))
 # 13
 summary(subset(Boston, rm > 8))
 summary(Boston)
-# relatively lower crime (comparing range), lower lstat (comparing range)
+# relatively lower crime (comparing range), higher median value (comparing median and mean), lower lstat (comparing range)
